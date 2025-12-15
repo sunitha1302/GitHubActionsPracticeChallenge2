@@ -60,8 +60,6 @@ jobs:
                 name: random-number-generator-executables
             - name: make binary executable
               run: chmod +x random-number-generator-linux
-            - name: install bun dependencies
-              run : bun install
             - name: run tests on linux
               run: |
                 echo "----------------------"
