@@ -64,13 +64,13 @@ jobs:
               run: |
                 echo "----------------------"
                 echo "Testing with no input..."
-                bun run ./random-number-generator.js
+                bun run ./random-number-generator-linux
                 echo "---------------------------"
                 echo "Testing with string.."
-                bun run ./random-number-generator.js "test-input"
+                bun run ./random-number-generator-linux "test-input"
                 echo "---------------------------------"
                 echo "Testing with number.."
-                bun run ./random-number-generator.js 1906
+                bun run ./random-number-generator-linux 1906
                 echo "---------------------------"
                 echo "Generated report:"
                 cat report.txt
